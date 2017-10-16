@@ -1,0 +1,114 @@
+.blue {
+  font-family: "Akkurat Light";
+  font-size: 36px;
+  color: $blue;
+  height: 215px;
+  line-height: 1.667;
+  //border: dotted 1px hotpink;
+
+  p {
+    text-align: center;
+    margin: 50px 0 0 0;
+  }
+}
+
+
+.off-white {
+  background-color: $off-white;
+  width: 100%;
+  text-align: center;
+
+  img {
+    margin: 50px;
+  }
+
+  h1 {
+    font-family: "Cassia ExtraLight";
+    line-height: 1.125;
+    font-size: 32px;
+    color: $blue-dark;
+    text-transform: lowercase;
+  }
+
+  p {
+    font-family: "Akkurat Light";
+    font-size: 21px;
+    line-height: 2em;
+    width: 75%;
+    margin: 2em auto;
+  }
+
+  a {
+    font-family: "Akkurat Light";
+    font-size: 18px;
+    color: $blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 80px 0;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#who-we-work-with {
+  position: relative;
+
+  .off-white {
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 887px;
+  }
+
+  .teal {
+    border: 4px solid rgba(249, 249, 249, 0.969);
+    background-color: rgb(38, 190, 184);
+    opacity: 0.969;
+    width: 734px;
+    margin: -115px auto 80px auto;
+    text-align: center;
+    color: $white;
+
+    h1 {
+      font-family: "Cassia ExtraLight";
+      font-size: 36px;
+      text-transform: lowercase;
+      margin: 1em 0 0.5em 0;
+    }
+
+    p {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      line-height: 2em;
+      width: 79%;
+      margin: 0 auto 2em auto;
+    }
+
+    a {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      color: $white;
+      display: block;
+      margin-bottom: 2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+

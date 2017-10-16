@@ -1,0 +1,46 @@
+#mission {
+  font-family: "Cassia ExtraLight";
+
+  > div {
+    width: 710px;
+    margin: 55px auto;
+  }
+
+  #our-mission {
+    width: 710px;
+    font-size: 30px;
+    line-height: 1.367;
+    margin-top: 100px;
+
+    h1 {
+      text-transform: lowercase;
+      color: $grey-dark;
+    }
+
+    p {
+      color: $blue-dark;
+      width: 560px;
+    }
+  }
+  
+  
+    #prose{
+        background: url("../img/mission-1.png") no-repeat 0px 0px/223px 143px;
+    }
+  
+}
+
+
+
+#prose {
+    font-size: 15px;
+    font-family: "Akkurat Light";
+    color: $grey;
+    line-height: 2;
+    
+
+    p {
+      width: 395px;
+      margin-left: 325px;
+    }
+  }

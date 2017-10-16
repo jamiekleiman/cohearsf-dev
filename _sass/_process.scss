@@ -1,0 +1,84 @@
+#process {
+  font-family: "Cassia ExtraLight";
+
+  > div {
+    width: 750px;
+    margin: 55px auto;
+  }
+
+  #our-process {
+    width: 710px;
+    font-size: 30px;
+    line-height: 1.367;
+    margin-top: 100px;
+
+    h1 {
+      text-transform: lowercase;
+      color: $grey-dark;
+    }
+
+    p {
+      color: $blue-dark;
+      width: 560px;
+    }
+  }
+
+  .numbers {
+    height: 325px;
+    background-color: $grey-medium;
+
+    h2 {
+      width: 325px;
+      height: 275px;
+      font-size: 30px;
+      background-color: $blue-dark;
+      color: $white;
+      float: left;
+      padding-top: 50px;
+      text-transform: lowercase;
+      text-align: center;
+    }
+
+    p {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      line-height: 2;
+      margin: 90px 0 0 65px;
+      color: $blue-dark-2;
+      width: 325px;
+      //border: 1px solid crimson;
+      float: left;
+    }
+  }
+
+  #observation {
+    h2 {
+      background: $blue-dark url("../img/process-1.png") no-repeat 90px 110px/147px 164px;
+    }
+
+    p {
+      width: 300px;
+    }
+  }
+
+  #coaching {
+    h2 {
+      float: right;
+      background: $blue url("../img/process-2.png") no-repeat 90px 110px/148px 152px;
+      color: $blue-dark;
+    }
+
+    p {
+      //float: right;
+    }
+  }
+
+  #integration {
+    h2 {
+      background: $blue-dark url("../img/process-3.png") no-repeat 60px 110px/180px 162px;
+    }
+  }
+  
+
+}
+

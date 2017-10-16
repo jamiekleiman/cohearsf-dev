@@ -1,0 +1,95 @@
+#header-extended {
+  background: url("../img/OpenOffice_M.jpg") no-repeat scroll top;
+  background-size: cover;
+}
+
+#header-extended-cohear {
+  background: url("../img/cohear-dots@2x.png") no-repeat scroll center;
+  background-size: cover;
+  width: 100%;
+  height: 492px;
+}
+
+#header-spacer-pixel {
+  width: 960px;
+  height: 96px;
+}
+
+#header {
+  background: white url("../img/header-dots.png") repeat-x;
+  width: 100%;
+  height: 96px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-bottom: 5px;
+  //border: dashed 1px hotpink;
+  //box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+
+  #hamburger {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#header-logo {
+  height: 86px;
+  //border: dashed 1px pink;
+  position: absolute;
+  
+  a{
+    
+    img{
+        background: #fff;
+        padding: 8px;
+    }
+  }
+}
+
+#header-logo img {
+  margin: 21px 0 0 0px;
+}
+
+#header-nav-items {
+  font-size: 12px;
+  font-family: "Akkurat Light";
+  line-height: 1.2;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  #close, #home {
+    display: none;
+  }
+
+  a {
+    display: block;
+    float: left;
+    padding: 10px 12px 10px 12px;
+    margin-top: 32px;
+    //border: 1px solid crimson;
+    text-transform: uppercase;
+    color: $grey;
+    text-decoration: none;
+    //letter-spacing: 1px;
+    background: #fff;
+  }
+
+  a:nth-child(3) {
+    padding-left: 24px;
+    //border: 1px solid crimson;
+  }
+
+  a:hover {
+    color: $blue;
+    //border-bottom: dotted 1px $blue;
+    text-decoration: underline;
+  }
+}
+
+
+

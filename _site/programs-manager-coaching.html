@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <title>Cohear SF | Manager Coaching</title>
+    <meta name="description" content="Craft your culture.">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+
+<div id="header-spacer-pixel">
+
+</div>
+
+
+<div id="header"
+     class="header-white ">
+    <a id="hamburger" href="#"></a>
+    
+    <nav class="container">
+        <div id="header-logo">
+            <a href="/"><img
+                    src="./img/header-cohear-logo.png"
+                             alt="Cohear San Francisco"
+                             width="127"></a>
+        </div>
+    
+        <div id="header-nav-items" class="mobile-hidden">
+            <a id="close" href="#"><img src="./img/mobile/header-x.png" alt="X"></a>
+            <a id="home" href="/">cohear</a>
+            <a href="/process.html">Our Process</a>
+            <a href="/programs.html">Programs</a>
+            <a href="/mission.html">Our Mission</a>
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog.html">Blog</a>
+        </div>
+    </nav>
+</div>
+
+<div id="content"><div id="programs" class="manager section-padding">
+    <div class="container">
+        <nav class="subnav">
+            <ul>
+                <li><a href="/programs-culture-building">culture building</a></li>
+                <li class="current"><a href="/programs-manager-coaching">manager coaching</a></li>
+                <li><a href="/programs-parental-leave">parental leave</a></li>
+            </ul>
+        </nav>
+        
+        <hr class="dots">
+        
+        <div class="inner-container section-padding">
+        
+            <div id="our-process">
+        
+                <h2>
+                    Managers are uniquely positioned to impact experiences of inclusion and to implement strong company values.
+                </h2>
+            </div>
+            
+            <div id="prose">
+                <p>
+                    We believe that the best way to strengthen managers is by crafting a personalized coaching model that supports whole-team cohesion.  Our programs focus on the dynamics of each team and provide leadership coaching that accounts for the specific needs of each manager.
+                </p>
+            </div>
+            
+            <div class="greenbk colorblock">
+                <p class="highlight">Cohear’s Manager Coaching Program begins with a period of observation and one-on-one interviews to gain a deeper understanding of group dynamics and company culture. We offer managers key insights that inform leadership, encourage their continued growth, and sustain team connectivity long after the program ends.</p>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+    <div class="graybk section-padding">
+        <div class="container">
+            <div class="inner-container">
+                <h3>Areas of focus include:</h3>
+                <ul class="two-column-list">
+                    <li>Leadership Development</li>
+                    <li>Interpersonal Dynamics</li>
+                    <li>Communication Skills</li>
+                    <li>Emotional Intelligence</li>
+                    <li>Team Cohesion</li>
+                    <li>Diversity and Inclusion</li>
+                    <li>New Managers</li>
+                    <li>Collaboration</li>
+                    <li>Giving Feedback</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta section-padding center">
+        <div class="container">
+            <div class="inner-container">
+                <h2>Investing in managers leads to stronger companies, increased retention, and healthier work environments.</h2>
+            </div>
+        </div>
+    </div>
+
+</div></div>
+
+
+<div id="bottom-cta">
+
+    <img src="./img/bottom-cta-squiggle.png" alt="" width="157">
+    <h1>Interested in Cohear for your company?</h1>
+    <a href="/contact.html">Let's talk</a>
+</div>
+
+
+<div id="footer">
+
+
+    <div id="address">
+        110 Gough St., Suite 401 <br>
+        San Francisco, CA 94102 <br>
+        <br>
+        <a href="tel:1-415-813-2130">(415) 813-2130</a> <br>
+        <a href="mailto:hello@cohearsf.com">hello@cohearsf.com</a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="application/javascript">
+    var header = $("#header");
+    var headerExtended = $("#header-extended");
+
+    if(headerExtended) {
+        $(window).on("scroll", function (e) {
+            var headerVisible = header.attr("data-visible");
+            // TODO: fix hardcoded size offset
+            var scrollHeight = headerExtended.height() - 86;
+            var scrollTop = $(window).scrollTop();
+
+            if(!headerVisible && scrollTop > scrollHeight) {
+                header.attr("data-visible", "true");
+                header.fadeIn(100);
+//            console.log("show", headerVisible, scrollHeight, window.scrollY);
+            }
+
+            if (headerVisible && scrollTop <= scrollHeight) {
+                header.attr("data-visible", ""); // huzzah for String type
+                header.fadeOut(100);
+//            console.log("hide", headerVisible, scrollHeight, window.scrollY);
+            }
+        })
+    }
+
+    var navItems = $('#header-nav-items');
+    var toggle = function (e) {
+        // TODO: fix bug when toggled off in mobile mode but switching to desktop
+        if (header.hasClass('header-white')) {
+            // toggle on
+            header.removeClass('header-white').addClass('header-blue');
+            navItems.show();
+        } else {
+            header.removeClass('header-blue').addClass('header-white');
+            navItems.hide();
+        }
+        return false;
+    };
+    $('#hamburger').on("click", toggle);
+    $('#close').on("click", toggle);
+
+    var content = $('#content');
+    var w = $(window);
+    var keepHeaderAligned = function (e) {
+        header.css({left: content.offset().left - w.scrollLeft()});
+    };
+    $(window).on("scroll", keepHeaderAligned);
+    $(window).on("resize", keepHeaderAligned);
+</script>
+
+</body>
+</html>

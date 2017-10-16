@@ -1,0 +1,26 @@
+#contact {
+  font-family: "Cassia ExtraLight";
+  color: $grey-dark;
+  text-align: center;
+
+  h1 {
+    font-size: 26px;
+    text-transform: lowercase;
+    margin: 45px auto;
+
+    height: 150px;
+
+    background: url("../img/contact-1.png") no-repeat 106px 55px/165px 92px;
+  }
+
+  p {
+    font-family: "Akkurat Light";
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 100px 0;
+
+    a {
+      color: $grey-dark;
+    }
+  }
+}

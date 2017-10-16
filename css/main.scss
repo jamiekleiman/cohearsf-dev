@@ -1,0 +1,402 @@
+---
+---
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@import "reset";
+@import "colors";
+@import "fonts";
+
+@media only screen and (min-width: 500px) {
+  @import "header";
+
+  @import "index";
+  @import "process";
+  @import "mission";
+  @import "about";
+  @import "contact";
+  @import "blog";
+  @import "programs";
+
+  html {
+    height: 100%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .inner-container{
+        width: 710px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h2{
+        font-size: 30px;
+        line-height: 1.367;
+        color: $blue-dark;
+    }
+    
+    h3{
+        font-family: "Cassia ExtraLight";
+        line-height: 2;
+        font-size: 24px;
+        color: $blue-dark;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    ul.two-column-list{
+        list-style: disc;
+        font-family: "Akkurat Light";
+        color: #626363;
+        column-count: 2;
+        column-gap: 40px;
+        margin: 0 5em;
+        
+        li{
+            padding: 5px 0;
+            break-inside: avoid;
+        }
+    }
+    
+    .section-padding{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+  #bottom-cta {
+    background-color: $off-white;
+    width: 100%;
+    height: 375px;
+    text-align: center;
+
+    img {
+      margin: 75px auto 50px auto;
+    }
+
+    h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 2;
+      font-size: 30px;
+      color: $blue-dark;
+      text-transform: lowercase;
+    }
+
+    a {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      color: $blue;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  #footer {
+    width: 100%;
+    background-color: $grey-dark;
+    height: 210px;
+
+    #address {
+      font-family: "Akkurat Light";
+      font-size: 15px;
+      color: $grey-medium;
+      line-height: 1.6;
+      padding: 50px 0 0 542px;
+
+      a {
+        color: $grey-medium;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  nav.subnav{
+    font-size: 26px;
+    font-family: "Cassia ExtraLight";
+    
+        ul{
+            display: flex;
+            justify-content: space-around; 
+            
+            li.current a:after{
+                border-bottom: 1px solid $blue-dark;
+                content: '';
+                width: 50%;
+                display: block;
+                margin: 13px auto;
+            }
+        }
+        
+        a{
+            text-decoration: none;
+            color: $blue-dark;
+        }
+    
+    }
+    
+    .parental #prose{
+        margin: 55px auto;
+        background: url("../img/parental-1.jpg") no-repeat 0px 0px/223px 143px;
+    }
+    
+    .culture #prose{
+        margin: 55px auto;
+        background: url("../img/culture-1.jpg") no-repeat 0px 0px/223px 143px;
+    }
+    
+    .manager #prose{
+        margin: 55px auto;
+        background: url("../img/manager-1.jpg") no-repeat 0px 0px/223px 143px;
+    }
+    
+    p.highlight{
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2;
+    }
+    
+    .bluebk{
+        background: $blue-dark;
+        color: #fff;
+    }
+    
+    .greenbk{
+        background: #26beb8;
+        color: #fff;
+    }
+    
+    .graybk{
+        background: #f9f9f9;
+    }
+
+    .colorblock{
+        padding:5em 3em;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  @import "mobile_header";
+
+  @import "mobile_index";
+  @import "mobile_process";
+  @import "mobile_mission";
+  @import "mobile_about";
+  @import "mobile_contact";
+  @import "mobile_blog";
+  @import "mobile_programs";
+
+  html {
+    width: 375px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    //border: 1px dashed hotpink;
+  }
+  
+  h1{
+    font-size: 30px;
+    color: #626363;
+    font-family: "Cassia ExtraLight";
+  }
+  
+  h2{
+        font-size: 30px;
+        line-height: 1.367;
+        color: $blue-dark;
+        font-family: "Cassia ExtraLight";
+    }
+    
+    h3{
+        font-family: "Cassia ExtraLight";
+        line-height: 2;
+        font-size: 24px;
+        color: $blue-dark;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .section-padding{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    
+    ul.two-column-list{
+        list-style: disc;
+        font-family: "Akkurat Light";
+        color: #626363;
+        column-count: 1;
+        column-gap: 0px;
+        margin: 0;
+        margin-left: 40px;
+        
+        li{
+            padding: 5px 0;
+            break-inside: avoid;
+        }
+    }
+
+  #bottom-cta {
+    background-color: $off-white;
+    width: 100%;
+    height: 165px;
+    text-align: center;
+
+    img {
+      margin: 30px auto 20px auto;
+      width: 61px;
+    }
+
+    h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 2;
+      font-size: 18px;
+      color: $blue-dark;
+      text-transform: lowercase;
+    }
+
+    a {
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      color: $blue;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  #footer {
+    width: 100%;
+    background-color: $grey-dark;
+    height: 150px;
+    position: relative;
+
+    #address {
+      @include centerer;
+      text-align: center;
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      color: $grey-medium;
+      line-height: 1.6;
+
+      a {
+        color: $grey-medium;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  nav.subnav{
+    font-size: 23px;
+    font-family: "Cassia ExtraLight";
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            li{
+                padding: 3% 0;
+                
+                &.current{
+                    
+                    a{
+                        text-decoration: underline;
+                        
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+        a{
+            text-decoration: none;
+            color: $blue-dark;
+        }
+    
+    }
+    
+    .parental #prose{
+        margin: 55px auto;
+        background: url("../img/parental-1.jpg") no-repeat 0px 0px/223px 143px;
+        padding-top: 165px;
+    }
+    
+    .culture #prose{
+        margin: 55px auto;
+        background: url("../img/culture-1.jpg") no-repeat 0px 0px/223px 143px;
+        padding-top: 165px;
+    }
+    
+    .manager #prose{
+        margin: 55px auto;
+        background: url("../img/manager-1.jpg") no-repeat 0px 0px/223px 143px;
+        padding-top: 165px;
+    }
+    
+    p.highlight{
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2;
+    }
+    
+    .bluebk{
+        background: $blue-dark;
+        color: #fff;
+    }
+    
+    .greenbk{
+        background: #26beb8;
+        color: #fff;
+    }
+    
+    .graybk{
+        background: #f9f9f9;
+    }
+
+    .colorblock{
+        padding:2em 1em;
+        text-align: center;
+    }
+}
+
+hr.dots{
+    background: white url("../img/header-dots.png") repeat-x;
+    height: 20px;
+    border: 0;
+}
+
+
+
+.center{
+    text-align: center;
+}
+
+small{
+    font-size: 80%;
+}

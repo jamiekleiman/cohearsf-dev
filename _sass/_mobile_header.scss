@@ -1,0 +1,86 @@
+#header-extended {
+  background: url("../img/mobile/index-office.jpg") no-repeat scroll top;
+  background-size: 375px;
+  height: 451px;
+  //border: 1px solid crimson;
+}
+
+#header-extended-cohear {
+  background: url("../img/mobile/index-dots.png") no-repeat scroll center;
+  background-size: 371px;
+  width: 100%;
+  height: 451px;
+}
+
+.hidden {
+  display: none;
+}
+
+#header-spacer-pixel {
+  width: 375px;
+  height: 86px;
+}
+
+#header {
+  width: 375px;
+  height: 86px;
+  //background: $white url("../img/mobile/header-1.png") no-repeat 0 4px;
+  background-size: 371px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  //border: 1px dashed cornflowerblue;
+
+  #hamburger {
+    display: block;
+    width: 375px;
+    height: 86px;
+  }
+
+  #header-logo {
+    display: none;
+  }
+
+  #header-nav-items {
+    //visibility: hidden;
+    display: none;
+
+    background-color: $blue;
+    height: 29em;
+
+    #close {
+      text-align: right;
+
+      img {
+        width: 35px;
+        margin: 10px 35px 0 0;
+      }
+    }
+
+    a {
+      font-family: "Cassia ExtraLight";
+      font-size: 30px;
+      display: block;
+      width: 100%;
+      height: 1.75em;
+      line-height: 2em;
+      text-transform: lowercase;
+      text-align: center;
+      text-decoration: none;
+      color: $white;
+    }
+
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.header-white {
+  background: $white url("../img/mobile/header-1.png") no-repeat 0 4px;
+}
+
+.header-blue {
+  background: $blue url("../img/mobile/header-1-alt.png") no-repeat 0 4px;
+}

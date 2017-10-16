@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <title>Cohear SF{% if page.title %} | {{ page.title }}{% endif %}</title>
+    <meta name="description" content="Craft your culture.">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+</head>
+<body>
+
+{% if page.header-extended %}
+<div id="header-extended">
+    <div id="header-extended-cohear"></div>
+</div>
+{% else %}
+<div id="header-spacer-pixel">
+
+</div>
+{% endif %}
+
+<div id="header"
+     class="header-white {% if page.header-extended %}hidden{% endif %}">
+    <a id="hamburger" href="#"></a>
+    
+    <nav class="container">
+        <div id="header-logo">
+            <a href="{{ '/' | prepend: site.baseurl }}"><img
+                    src="./img/header-cohear-logo.png"
+                             alt="Cohear San Francisco"
+                             width="127"></a>
+        </div>
+    
+        <div id="header-nav-items" class="mobile-hidden">
+            <a id="close" href="#"><img src="./img/mobile/header-x.png" alt="X"></a>
+            <a id="home" href="{{ '/' | prepend: site.baseurl }}">cohear</a>
+            <a href="{{ '/process.html' | prepend: site.baseurl }}">Our Process</a>
+            <a href="{{ '/programs.html' | prepend: site.baseurl }}">Programs</a>
+            <a href="{{ '/mission.html' | prepend: site.baseurl }}">Our Mission</a>
+            <a href="{{ '/about.html' | prepend: site.baseurl }}">About Us</a>
+            <a href="{{ '/contact.html' | prepend: site.baseurl }}">Contact</a>
+            <a href="{{ '/blog.html' | prepend: site.baseurl }}">Blog</a>
+        </div>
+    </nav>
+</div>
+
+<div id="content">{{ content }}</div>
+
+{% if page.show-bottom-cta != false %}
+<div id="bottom-cta">
+
+    <img src="./img/bottom-cta-squiggle.png" alt="" width="157">
+    <h1>Interested in Cohear for your company?</h1>
+    <a href="{{ '/contact.html' | prepend: site.baseurl }}">Let's talk</a>
+</div>
+{% endif %}
+
+<div id="footer">
+
+
+    <div id="address">
+        110 Gough St., Suite 401 <br>
+        San Francisco, CA 94102 <br>
+        <br>
+        <a href="tel:1-415-813-2130">(415) 813-2130</a> <br>
+        <a href="mailto:hello@cohearsf.com">hello@cohearsf.com</a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="application/javascript">
+    var header = $("#header");
+    var headerExtended = $("#header-extended");
+
+    if(headerExtended) {
+        $(window).on("scroll", function (e) {
+            var headerVisible = header.attr("data-visible");
+            // TODO: fix hardcoded size offset
+            var scrollHeight = headerExtended.height() - 86;
+            var scrollTop = $(window).scrollTop();
+
+            if(!headerVisible && scrollTop > scrollHeight) {
+                header.attr("data-visible", "true");
+                header.fadeIn(100);
+//            console.log("show", headerVisible, scrollHeight, window.scrollY);
+            }
+
+            if (headerVisible && scrollTop <= scrollHeight) {
+                header.attr("data-visible", ""); // huzzah for String type
+                header.fadeOut(100);
+//            console.log("hide", headerVisible, scrollHeight, window.scrollY);
+            }
+        })
+    }
+
+    var navItems = $('#header-nav-items');
+    var toggle = function (e) {
+        // TODO: fix bug when toggled off in mobile mode but switching to desktop
+        if (header.hasClass('header-white')) {
+            // toggle on
+            header.removeClass('header-white').addClass('header-blue');
+            navItems.show();
+        } else {
+            header.removeClass('header-blue').addClass('header-white');
+            navItems.hide();
+        }
+        return false;
+    };
+    $('#hamburger').on("click", toggle);
+    $('#close').on("click", toggle);
+
+    var content = $('#content');
+    var w = $(window);
+    var keepHeaderAligned = function (e) {
+        header.css({left: content.offset().left - w.scrollLeft()});
+    };
+    $(window).on("scroll", keepHeaderAligned);
+    $(window).on("resize", keepHeaderAligned);
+</script>
+
+</body>
+</html>

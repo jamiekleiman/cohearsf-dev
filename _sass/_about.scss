@@ -1,0 +1,59 @@
+#about {
+  #blurb {
+    width: 100%;
+    height: 300px;
+    background-color: $blue;
+    font-family: "Cassia ExtraLight";
+    font-size: 32px;
+    line-height: 1.233;
+    color: $white;
+    text-transform: lowercase;
+    position: relative;
+    margin-top: 30px;
+
+    p {
+      text-align: center;
+      width: 750px;
+      @include centerer;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Cassia ExtraLight";
+    font-size: 30px;
+    color: $blue-dark;
+    text-transform: lowercase;
+    margin: 50px auto;
+  }
+
+  #founders {
+    width: 747px;
+    height: 631px;
+    background-color: $grey-dark;
+    margin: 0 auto;
+
+    img {
+      width: 747px;
+    }
+  }
+
+  #bio {
+    width: 625px;
+    margin: 75px auto;
+
+    h2 {
+      font-family: "Cassia ExtraLight";
+      color: $blue;
+      font-size: 30px;
+    }
+
+    p {
+      font-family: "Akkurat Light";
+      font-size: 15px;
+      color: $grey-dark;
+      line-height: 2;
+      margin: 40px 0 0 0;
+    }
+  }
+}

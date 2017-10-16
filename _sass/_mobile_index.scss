@@ -1,0 +1,123 @@
+#index {
+  .blue {
+    font-family: "Akkurat Light";
+    font-size: 17px;
+    color: $blue;
+    height: 170px;
+    line-height: 1.667;
+    position: relative;
+
+    p {
+      width: 100%;
+      text-align: center;
+      @include centerer;
+    }
+  }
+
+  .off-white {
+    background-color: $off-white;
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    #arrow-down {
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: -13px;
+      left: 174px;
+      display: inline;
+    }
+
+    #img-our-process {
+      width: 110px;
+      margin: 65px auto 40px auto;
+    }
+
+    h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 1.125;
+      font-size: 20px;
+      color: $blue-dark;
+      text-transform: lowercase;
+    }
+
+    p {
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      line-height: 2em;
+      width: 90%;
+      margin: 2em auto;
+      color: $grey-dark;
+    }
+
+    a {
+      font-family: "Akkurat Light";
+      font-size: 11px;
+      color: $blue;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      letter-spacing: 1px;
+      padding-bottom: 3em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #who-we-work-with {
+    position: relative;
+
+    img {
+      width: 375px;
+    }
+
+    .teal {
+      border: 2px solid rgba(249, 249, 249, 0.969);
+      background-color: rgb(38, 190, 184);
+      opacity: 0.969;
+      width: 80%;
+      margin: -55px auto 40px auto;
+      text-align: center;
+      color: $white;
+
+      h1 {
+        font-family: "Cassia ExtraLight";
+        font-size: 20px;
+        text-transform: lowercase;
+        margin: 1em 0 0.5em 0;
+      }
+
+      p {
+        font-family: "Akkurat Light";
+        font-size: 12px;
+        line-height: 2em;
+        width: 90%;
+        margin: 0 auto 2em auto;
+
+        span {
+          display: none;
+        }
+      }
+
+      a {
+        font-family: "Akkurat Light";
+        font-size: 11px;
+        color: $white;
+        display: block;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

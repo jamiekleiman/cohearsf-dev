@@ -1,0 +1,1006 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Akkurat Light';
+  src: url("../css/fonts/lineto-akkurat-light.eot");
+  src: url("../css/fonts/lineto-akkurat-light.eot?#iefix") format("embedded-opentype"), url("../css/fonts/lineto-akkurat-light.woff2") format("woff2"), url("../css/fonts/lineto-akkurat-light.woff") format("woff"); }
+@font-face {
+  font-family: 'Cassia ExtraLight';
+  src: url("../css/fonts/3223B6_0_0.eot");
+  src: url("../css/fonts/3223B6_0_0.eot?#iefix") format("embedded-opentype"), url("../css/fonts/3223B6_0_0.woff2") format("woff2"), url("../css/fonts/3223B6_0_0.woff") format("woff"); }
+@media only screen and (min-width: 500px) {
+  #header-extended {
+    background: url("../img/OpenOffice_M.jpg") no-repeat scroll top;
+    background-size: cover; }
+
+  #header-extended-cohear {
+    background: url("../img/cohear-dots@2x.png") no-repeat scroll center;
+    background-size: cover;
+    width: 100%;
+    height: 492px; }
+
+  #header-spacer-pixel {
+    width: 960px;
+    height: 96px; }
+
+  #header {
+    background: white url("../img/header-dots.png") repeat-x;
+    width: 100%;
+    height: 96px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding-bottom: 5px; }
+    #header #hamburger {
+      display: none; }
+
+  .hidden {
+    display: none; }
+
+  #header-logo {
+    height: 86px;
+    position: absolute; }
+    #header-logo a img {
+      background: #fff;
+      padding: 8px; }
+
+  #header-logo img {
+    margin: 21px 0 0 0px; }
+
+  #header-nav-items {
+    font-size: 12px;
+    font-family: "Akkurat Light";
+    line-height: 1.2;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    #header-nav-items #close, #header-nav-items #home {
+      display: none; }
+    #header-nav-items a {
+      display: block;
+      float: left;
+      padding: 10px 12px 10px 12px;
+      margin-top: 32px;
+      text-transform: uppercase;
+      color: #626363;
+      text-decoration: none;
+      background: #fff; }
+    #header-nav-items a:nth-child(3) {
+      padding-left: 24px; }
+    #header-nav-items a:hover {
+      color: #26beb8;
+      text-decoration: underline; }
+
+  .blue {
+    font-family: "Akkurat Light";
+    font-size: 36px;
+    color: #26beb8;
+    height: 215px;
+    line-height: 1.667; }
+    .blue p {
+      text-align: center;
+      margin: 50px 0 0 0; }
+
+  .off-white {
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center; }
+    .off-white img {
+      margin: 50px; }
+    .off-white h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 1.125;
+      font-size: 32px;
+      color: #233d96;
+      text-transform: lowercase; }
+    .off-white p {
+      font-family: "Akkurat Light";
+      font-size: 21px;
+      line-height: 2em;
+      width: 75%;
+      margin: 2em auto; }
+    .off-white a {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      color: #26beb8;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 0 0 80px 0;
+      letter-spacing: 1px; }
+    .off-white a:hover {
+      text-decoration: underline; }
+
+  #who-we-work-with {
+    position: relative; }
+    #who-we-work-with .off-white {
+      height: 110px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    #who-we-work-with img {
+      display: block;
+      margin: 0 auto;
+      width: 887px; }
+    #who-we-work-with .teal {
+      border: 4px solid rgba(249, 249, 249, 0.969);
+      background-color: #26beb8;
+      opacity: 0.969;
+      width: 734px;
+      margin: -115px auto 80px auto;
+      text-align: center;
+      color: #ffffff; }
+      #who-we-work-with .teal h1 {
+        font-family: "Cassia ExtraLight";
+        font-size: 36px;
+        text-transform: lowercase;
+        margin: 1em 0 0.5em 0; }
+      #who-we-work-with .teal p {
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2em;
+        width: 79%;
+        margin: 0 auto 2em auto; }
+      #who-we-work-with .teal a {
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px; }
+      #who-we-work-with .teal a:hover {
+        text-decoration: underline; }
+
+  #process {
+    font-family: "Cassia ExtraLight"; }
+    #process > div {
+      width: 750px;
+      margin: 55px auto; }
+    #process #our-process {
+      width: 710px;
+      font-size: 30px;
+      line-height: 1.367;
+      margin-top: 100px; }
+      #process #our-process h1 {
+        text-transform: lowercase;
+        color: #626363; }
+      #process #our-process p {
+        color: #233d96;
+        width: 560px; }
+    #process .numbers {
+      height: 325px;
+      background-color: #f9f9f9; }
+      #process .numbers h2 {
+        width: 325px;
+        height: 275px;
+        font-size: 30px;
+        background-color: #233d96;
+        color: #ffffff;
+        float: left;
+        padding-top: 50px;
+        text-transform: lowercase;
+        text-align: center; }
+      #process .numbers p {
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2;
+        margin: 90px 0 0 65px;
+        color: #353e48;
+        width: 325px;
+        float: left; }
+    #process #observation h2 {
+      background: #233d96 url("../img/process-1.png") no-repeat 90px 110px/147px 164px; }
+    #process #observation p {
+      width: 300px; }
+    #process #coaching h2 {
+      float: right;
+      background: #26beb8 url("../img/process-2.png") no-repeat 90px 110px/148px 152px;
+      color: #233d96; }
+    #process #integration h2 {
+      background: #233d96 url("../img/process-3.png") no-repeat 60px 110px/180px 162px; }
+
+  #mission {
+    font-family: "Cassia ExtraLight"; }
+    #mission > div {
+      width: 710px;
+      margin: 55px auto; }
+    #mission #our-mission {
+      width: 710px;
+      font-size: 30px;
+      line-height: 1.367;
+      margin-top: 100px; }
+      #mission #our-mission h1 {
+        text-transform: lowercase;
+        color: #626363; }
+      #mission #our-mission p {
+        color: #233d96;
+        width: 560px; }
+    #mission #prose {
+      background: url("../img/mission-1.png") no-repeat 0px 0px/223px 143px; }
+
+  #prose {
+    font-size: 15px;
+    font-family: "Akkurat Light";
+    color: #626363;
+    line-height: 2; }
+    #prose p {
+      width: 395px;
+      margin-left: 325px; }
+
+  #about #blurb {
+    width: 100%;
+    height: 300px;
+    background-color: #26beb8;
+    font-family: "Cassia ExtraLight";
+    font-size: 32px;
+    line-height: 1.233;
+    color: #ffffff;
+    text-transform: lowercase;
+    position: relative;
+    margin-top: 30px; }
+    #about #blurb p {
+      text-align: center;
+      width: 750px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #about h1 {
+    text-align: center;
+    font-family: "Cassia ExtraLight";
+    font-size: 30px;
+    color: #233d96;
+    text-transform: lowercase;
+    margin: 50px auto; }
+  #about #founders {
+    width: 747px;
+    height: 631px;
+    background-color: #626363;
+    margin: 0 auto; }
+    #about #founders img {
+      width: 747px; }
+  #about #bio {
+    width: 625px;
+    margin: 75px auto; }
+    #about #bio h2 {
+      font-family: "Cassia ExtraLight";
+      color: #26beb8;
+      font-size: 30px; }
+    #about #bio p {
+      font-family: "Akkurat Light";
+      font-size: 15px;
+      color: #626363;
+      line-height: 2;
+      margin: 40px 0 0 0; }
+
+  #contact {
+    width: 100%;
+    height: 425px;
+    margin-top: 85px; }
+    #contact h1 {
+      float: left;
+      font-family: "Cassia ExtraLight";
+      font-size: 36px;
+      color: #353e48;
+      text-transform: lowercase;
+      background: url("../img/contact-1.png") no-repeat 0 65px/228px 127px;
+      width: 382px;
+      height: 192px; }
+    #contact p {
+      font-family: "Akkurat Light";
+      font-size: 15px;
+      color: #626363;
+      line-height: 2; }
+      #contact p a {
+        color: #626363;
+        text-decoration: none; }
+      #contact p a:hover {
+        text-decoration: underline; }
+
+  #blog {
+    width: 100%;
+    height: 325px;
+    position: relative; }
+    #blog h1 {
+      font-family: "Cassia ExtraLight";
+      font-size: 36px;
+      color: #353e48;
+      text-transform: lowercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+  #programs {
+    font-family: "Cassia ExtraLight"; }
+    #programs > div {
+      width: 100%; }
+    #programs #our-process {
+      font-size: 30px;
+      line-height: 1.367;
+      width: 80%; }
+      #programs #our-process h1 {
+        text-transform: lowercase;
+        color: #626363; }
+      #programs #our-process p {
+        color: #233d96;
+        width: 560px; }
+    #programs .numbers {
+      height: 325px;
+      background-color: #f9f9f9; }
+      #programs .numbers p {
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2;
+        margin: 90px 0 0 65px;
+        color: #353e48;
+        width: 325px;
+        float: left; }
+    #programs #features-wrap {
+      display: flex; }
+    #programs .feature {
+      width: 33.3333%;
+      margin: 0 2%; }
+      #programs .feature a {
+        text-decoration: none; }
+    #programs .feature-top {
+      padding: 9px 0;
+      text-align: center; }
+      #programs .feature-top img {
+        max-width: 115px; }
+    #programs .feature-bottom {
+      background: #f9f9f9; }
+      #programs .feature-bottom h2 {
+        text-align: center;
+        padding: 1.3em 0; }
+
+  html {
+    height: 100%;
+    padding: 0px;
+    margin: 0 auto; }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .inner-container {
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  h2 {
+    font-size: 30px;
+    line-height: 1.367;
+    color: #233d96; }
+
+  h3 {
+    font-family: "Cassia ExtraLight";
+    line-height: 2;
+    font-size: 24px;
+    color: #233d96;
+    text-align: center;
+    margin-bottom: 1em; }
+
+  ul.two-column-list {
+    list-style: disc;
+    font-family: "Akkurat Light";
+    color: #626363;
+    column-count: 2;
+    column-gap: 40px;
+    margin: 0 5em; }
+    ul.two-column-list li {
+      padding: 5px 0;
+      break-inside: avoid; }
+
+  .section-padding {
+    padding-top: 3em;
+    padding-bottom: 3em; }
+
+  #bottom-cta {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 375px;
+    text-align: center; }
+    #bottom-cta img {
+      margin: 75px auto 50px auto; }
+    #bottom-cta h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 2;
+      font-size: 30px;
+      color: #233d96;
+      text-transform: lowercase; }
+    #bottom-cta a {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      color: #26beb8;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+
+  #footer {
+    width: 100%;
+    background-color: #626363;
+    height: 210px; }
+    #footer #address {
+      font-family: "Akkurat Light";
+      font-size: 15px;
+      color: #f9f9f9;
+      line-height: 1.6;
+      padding: 50px 0 0 542px; }
+      #footer #address a {
+        color: #f9f9f9;
+        text-decoration: none; }
+      #footer #address a:hover {
+        text-decoration: underline; }
+
+  nav.subnav {
+    font-size: 26px;
+    font-family: "Cassia ExtraLight"; }
+    nav.subnav ul {
+      display: flex;
+      justify-content: space-around; }
+      nav.subnav ul li.current a:after {
+        border-bottom: 1px solid #233d96;
+        content: '';
+        width: 50%;
+        display: block;
+        margin: 13px auto; }
+    nav.subnav a {
+      text-decoration: none;
+      color: #233d96; }
+
+  .parental #prose {
+    margin: 55px auto;
+    background: url("../img/parental-1.jpg") no-repeat 0px 0px/223px 143px; }
+
+  .culture #prose {
+    margin: 55px auto;
+    background: url("../img/culture-1.jpg") no-repeat 0px 0px/223px 143px; }
+
+  .manager #prose {
+    margin: 55px auto;
+    background: url("../img/manager-1.jpg") no-repeat 0px 0px/223px 143px; }
+
+  p.highlight {
+    font-family: "Akkurat Light";
+    font-size: 18px;
+    line-height: 2; }
+
+  .bluebk {
+    background: #233d96;
+    color: #fff; }
+
+  .greenbk {
+    background: #26beb8;
+    color: #fff; }
+
+  .graybk {
+    background: #f9f9f9; }
+
+  .colorblock {
+    padding: 5em 3em;
+    text-align: center; } }
+@media only screen and (max-width: 500px) {
+  #header-extended {
+    background: url("../img/mobile/index-office.jpg") no-repeat scroll top;
+    background-size: 375px;
+    height: 451px; }
+
+  #header-extended-cohear {
+    background: url("../img/mobile/index-dots.png") no-repeat scroll center;
+    background-size: 371px;
+    width: 100%;
+    height: 451px; }
+
+  .hidden {
+    display: none; }
+
+  #header-spacer-pixel {
+    width: 375px;
+    height: 86px; }
+
+  #header {
+    width: 375px;
+    height: 86px;
+    background-size: 371px;
+    position: fixed;
+    top: 0;
+    z-index: 100; }
+    #header #hamburger {
+      display: block;
+      width: 375px;
+      height: 86px; }
+    #header #header-logo {
+      display: none; }
+    #header #header-nav-items {
+      display: none;
+      background-color: #26beb8;
+      height: 29em; }
+      #header #header-nav-items #close {
+        text-align: right; }
+        #header #header-nav-items #close img {
+          width: 35px;
+          margin: 10px 35px 0 0; }
+      #header #header-nav-items a {
+        font-family: "Cassia ExtraLight";
+        font-size: 30px;
+        display: block;
+        width: 100%;
+        height: 1.75em;
+        line-height: 2em;
+        text-transform: lowercase;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff; }
+      #header #header-nav-items a:hover {
+        color: #233d96; }
+
+  .header-white {
+    background: #ffffff url("../img/mobile/header-1.png") no-repeat 0 4px; }
+
+  .header-blue {
+    background: #26beb8 url("../img/mobile/header-1-alt.png") no-repeat 0 4px; }
+
+  #index .blue {
+    font-family: "Akkurat Light";
+    font-size: 17px;
+    color: #26beb8;
+    height: 170px;
+    line-height: 1.667;
+    position: relative; }
+    #index .blue p {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #index .off-white {
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative; }
+    #index .off-white #arrow-down {
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: -13px;
+      left: 174px;
+      display: inline; }
+    #index .off-white #img-our-process {
+      width: 110px;
+      margin: 65px auto 40px auto; }
+    #index .off-white h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 1.125;
+      font-size: 20px;
+      color: #233d96;
+      text-transform: lowercase; }
+    #index .off-white p {
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      line-height: 2em;
+      width: 90%;
+      margin: 2em auto;
+      color: #626363; }
+    #index .off-white a {
+      font-family: "Akkurat Light";
+      font-size: 11px;
+      color: #26beb8;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      letter-spacing: 1px;
+      padding-bottom: 3em; }
+    #index .off-white a:hover {
+      text-decoration: underline; }
+  #index #who-we-work-with {
+    position: relative; }
+    #index #who-we-work-with img {
+      width: 375px; }
+    #index #who-we-work-with .teal {
+      border: 2px solid rgba(249, 249, 249, 0.969);
+      background-color: #26beb8;
+      opacity: 0.969;
+      width: 80%;
+      margin: -55px auto 40px auto;
+      text-align: center;
+      color: #ffffff; }
+      #index #who-we-work-with .teal h1 {
+        font-family: "Cassia ExtraLight";
+        font-size: 20px;
+        text-transform: lowercase;
+        margin: 1em 0 0.5em 0; }
+      #index #who-we-work-with .teal p {
+        font-family: "Akkurat Light";
+        font-size: 12px;
+        line-height: 2em;
+        width: 90%;
+        margin: 0 auto 2em auto; }
+        #index #who-we-work-with .teal p span {
+          display: none; }
+      #index #who-we-work-with .teal a {
+        font-family: "Akkurat Light";
+        font-size: 11px;
+        color: #ffffff;
+        display: block;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px; }
+      #index #who-we-work-with .teal a:hover {
+        text-decoration: underline; }
+
+  #process {
+    font-family: "Cassia ExtraLight"; }
+    #process > div {
+      margin: 55px auto; }
+    #process #our-process {
+      font-size: 19px;
+      line-height: 1.367;
+      margin: 35px 40px; }
+      #process #our-process h1 {
+        text-transform: lowercase;
+        color: #626363; }
+      #process #our-process p {
+        color: #233d96; }
+    #process .numbers {
+      height: 400px;
+      width: 325px;
+      background-color: #f9f9f9;
+      position: relative; }
+      #process .numbers h2 {
+        width: 325px;
+        font-size: 29px;
+        background-color: #233d96;
+        color: #ffffff;
+        text-transform: lowercase;
+        text-align: center;
+        padding-top: 136px;
+        padding-bottom: 25px; }
+      #process .numbers p {
+        font-family: "Akkurat Light";
+        font-size: 15px;
+        line-height: 2;
+        color: #353e48;
+        text-align: center;
+        width: 90%;
+        margin: 2em auto; }
+    #process #observation h2 {
+      background: #233d96 url("../img/process-1.png") no-repeat 118px 22px/88px 98px; }
+    #process #observation p {
+      width: 300px; }
+    #process #coaching h2 {
+      background: #26beb8 url("../img/process-2.png") no-repeat 118px 22px/88px 90px;
+      color: #233d96; }
+    #process #integration h2 {
+      background: #233d96 url("../img/process-3.png") no-repeat 98px 22px/107px 96px; }
+
+  #mission {
+    font-family: "Cassia ExtraLight"; }
+    #mission > div {
+      margin: 55px auto; }
+    #mission #our-mission {
+      font-size: 19px;
+      line-height: 1.367;
+      margin: 35px 40px; }
+      #mission #our-mission h1 {
+        text-transform: lowercase;
+        color: #626363; }
+      #mission #our-mission p {
+        color: #233d96; }
+    #mission #prose {
+      font-size: 14px;
+      font-family: "Akkurat Light";
+      color: #626363;
+      line-height: 1.7;
+      background: url("../img/mission-1.png") no-repeat 40px 0px/103px 66px;
+      padding-top: 110px; }
+      #mission #prose p {
+        margin: 0 40px; }
+
+  #about #blurb {
+    width: 100%;
+    height: 290px;
+    background-color: #26beb8;
+    font-family: "Cassia ExtraLight";
+    font-size: 19px;
+    line-height: 1.579;
+    color: #ffffff;
+    text-transform: lowercase;
+    position: relative; }
+    #about #blurb p {
+      width: 285px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #about h1 {
+    font-family: "Cassia ExtraLight";
+    font-size: 19px;
+    color: #233d96;
+    text-transform: lowercase;
+    margin: 32px 0 32px 0;
+    text-align: center; }
+  #about #founders {
+    width: 338px;
+    height: 285px;
+    background-color: #626363;
+    margin: 0 auto; }
+    #about #founders img {
+      width: 100%; }
+  #about #bio {
+    margin: 32px 25px 32px 45px;
+    line-height: 1.579; }
+    #about #bio h2 {
+      font-family: "Cassia ExtraLight";
+      color: #26beb8;
+      font-size: 19px; }
+    #about #bio p {
+      font-family: "Akkurat Light";
+      font-size: 14px;
+      color: #626363;
+      line-height: 2;
+      margin: 1.5em 0; }
+
+  #contact {
+    font-family: "Cassia ExtraLight";
+    color: #626363;
+    text-align: center; }
+    #contact h1 {
+      font-size: 26px;
+      text-transform: lowercase;
+      margin: 45px auto;
+      height: 150px;
+      background: url("../img/contact-1.png") no-repeat 106px 55px/165px 92px; }
+    #contact p {
+      font-family: "Akkurat Light";
+      font-size: 18px;
+      line-height: 2;
+      margin: 0 0 100px 0; }
+      #contact p a {
+        color: #626363; }
+
+  #blog {
+    font-family: "Cassia ExtraLight";
+    color: #353e48;
+    text-align: center; }
+    #blog h1 {
+      font-size: 26px;
+      text-transform: lowercase;
+      margin: 45px auto;
+      height: 150px; }
+
+  #programs {
+    font-family: "Cassia ExtraLight";
+    padding-left: 30px;
+    padding-right: 30px; }
+    #programs > div {
+      width: 100%; }
+    #programs h2 {
+      font-size: 19px;
+      line-height: 1.55; }
+    #programs #our-process {
+      font-size: 30px;
+      line-height: 1.367;
+      width: 100%; }
+      #programs #our-process h1 {
+        text-transform: lowercase;
+        color: #626363;
+        font-size: 19px; }
+      #programs #our-process p {
+        color: #233d96;
+        width: 560px; }
+    #programs p {
+      font-size: 15px;
+      font-family: "Akkurat Light";
+      line-height: 2; }
+    #programs .numbers {
+      height: 325px;
+      background-color: #f9f9f9; }
+      #programs .numbers p {
+        font-family: "Akkurat Light";
+        font-size: 18px;
+        line-height: 2;
+        margin: 90px 0 0 65px;
+        color: #353e48;
+        width: 325px;
+        float: left; }
+    #programs #features-wrap {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1em;
+      padding-right: 1em; }
+    #programs .feature {
+      width: auto;
+      margin: 0% 2% 6%; }
+      #programs .feature a {
+        text-decoration: none; }
+    #programs .feature-top {
+      padding: 9px 0;
+      text-align: center; }
+      #programs .feature-top img {
+        max-width: 115px; }
+    #programs .feature-bottom {
+      background: #f9f9f9; }
+      #programs .feature-bottom h2 {
+        text-align: center;
+        padding: 1.3em 0; }
+
+  html {
+    width: 375px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto; }
+
+  h1 {
+    font-size: 30px;
+    color: #626363;
+    font-family: "Cassia ExtraLight"; }
+
+  h2 {
+    font-size: 30px;
+    line-height: 1.367;
+    color: #233d96;
+    font-family: "Cassia ExtraLight"; }
+
+  h3 {
+    font-family: "Cassia ExtraLight";
+    line-height: 2;
+    font-size: 24px;
+    color: #233d96;
+    text-align: center;
+    margin-bottom: 1em; }
+
+  .section-padding {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+
+  ul.two-column-list {
+    list-style: disc;
+    font-family: "Akkurat Light";
+    color: #626363;
+    column-count: 1;
+    column-gap: 0px;
+    margin: 0;
+    margin-left: 40px; }
+    ul.two-column-list li {
+      padding: 5px 0;
+      break-inside: avoid; }
+
+  #bottom-cta {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 165px;
+    text-align: center; }
+    #bottom-cta img {
+      margin: 30px auto 20px auto;
+      width: 61px; }
+    #bottom-cta h1 {
+      font-family: "Cassia ExtraLight";
+      line-height: 2;
+      font-size: 18px;
+      color: #233d96;
+      text-transform: lowercase; }
+    #bottom-cta a {
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      color: #26beb8;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+
+  #footer {
+    width: 100%;
+    background-color: #626363;
+    height: 150px;
+    position: relative; }
+    #footer #address {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: "Akkurat Light";
+      font-size: 12px;
+      color: #f9f9f9;
+      line-height: 1.6; }
+      #footer #address a {
+        color: #f9f9f9;
+        text-decoration: none; }
+      #footer #address a:hover {
+        text-decoration: underline; }
+
+  nav.subnav {
+    font-size: 23px;
+    font-family: "Cassia ExtraLight"; }
+    nav.subnav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      nav.subnav ul li {
+        padding: 3% 0; }
+        nav.subnav ul li.current a {
+          text-decoration: underline; }
+          nav.subnav ul li.current a:after {
+            display: none; }
+    nav.subnav a {
+      text-decoration: none;
+      color: #233d96; }
+
+  .parental #prose {
+    margin: 55px auto;
+    background: url("../img/parental-1.jpg") no-repeat 0px 0px/223px 143px;
+    padding-top: 165px; }
+
+  .culture #prose {
+    margin: 55px auto;
+    background: url("../img/culture-1.jpg") no-repeat 0px 0px/223px 143px;
+    padding-top: 165px; }
+
+  .manager #prose {
+    margin: 55px auto;
+    background: url("../img/manager-1.jpg") no-repeat 0px 0px/223px 143px;
+    padding-top: 165px; }
+
+  p.highlight {
+    font-family: "Akkurat Light";
+    font-size: 18px;
+    line-height: 2; }
+
+  .bluebk {
+    background: #233d96;
+    color: #fff; }
+
+  .greenbk {
+    background: #26beb8;
+    color: #fff; }
+
+  .graybk {
+    background: #f9f9f9; }
+
+  .colorblock {
+    padding: 2em 1em;
+    text-align: center; } }
+hr.dots {
+  background: white url("../img/header-dots.png") repeat-x;
+  height: 20px;
+  border: 0; }
+
+.center {
+  text-align: center; }
+
+small {
+  font-size: 80%; }

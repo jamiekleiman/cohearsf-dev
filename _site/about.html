@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=375">
+
+    <title>Cohear SF | About Us</title>
+    <meta name="description" content="Craft your culture.">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+
+<div id="header-spacer-pixel">
+
+</div>
+
+
+<div id="header"
+     class="header-white ">
+    <a id="hamburger" href="#"></a>
+    
+    <nav class="container">
+        <div id="header-logo">
+            <a href="/"><img
+                    src="./img/header-cohear-logo.png"
+                             alt="Cohear San Francisco"
+                             width="127"></a>
+        </div>
+    
+        <div id="header-nav-items" class="mobile-hidden">
+            <a id="close" href="#"><img src="./img/mobile/header-x.png" alt="X"></a>
+            <a id="home" href="/">cohear</a>
+            <a href="/process.html">Our Process</a>
+            <a href="/programs.html">Programs</a>
+            <a href="/mission.html">Our Mission</a>
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog.html">Blog</a>
+        </div>
+    </nav>
+</div>
+
+<div id="content"><div id="about">
+    <div id="blurb">
+        <p>
+            Thriving companies depend on thoughful and compassionate leaders to
+            create an environment where high quality work relations can emerge.
+        </p>
+    </div>
+
+    <h1>Our Founders</h1>
+
+    <div id="founders">
+        <picture>
+            <source media="(max-width: 500px)"
+                    srcset="./img/mobile/about-1.jpg">
+
+            <img src="./img/about-1.jpg" alt="Founders">
+        </picture>
+    </div>
+
+    <div id="bio">
+        <h2>We came together through our interest in creating healthy communities that value inclusivity, compassion, and emotional wellbeing.  Dedicated to thinking about the intersection of culture, psychology, and group dynamics, we are passionate about finding ways to support social and emotional awareness in the workplace.</h2>
+
+        <p>
+            With a combined 20 years of experience in psychology, Mahima
+            Muralidharan and Mia Maturen bring a unique perspective to their
+            work with leaders. Through their experiences as psychotherapists,
+            they saw first hand the way individuals impact and are impacted by
+            the spaces they work in.  After years of supporting professionals in
+            a therapeutic setting, they realized the importance of coaching
+            within organizations to create sustainable company cultures and
+            to develop emotionally robust leaders.
+        </p>
+
+    </div>
+</div></div>
+
+
+<div id="bottom-cta">
+
+    <img src="./img/bottom-cta-squiggle.png" alt="" width="157">
+    <h1>Interested in Cohear for your company?</h1>
+    <a href="/contact.html">Let's talk</a>
+</div>
+
+
+<div id="footer">
+
+
+    <div id="address">
+        110 Gough St., Suite 401 <br>
+        San Francisco, CA 94102 <br>
+        <br>
+        <a href="tel:1-415-813-2130">(415) 813-2130</a> <br>
+        <a href="mailto:hello@cohearsf.com">hello@cohearsf.com</a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="application/javascript">
+    var header = $("#header");
+    var headerExtended = $("#header-extended");
+
+    if(headerExtended) {
+        $(window).on("scroll", function (e) {
+            var headerVisible = header.attr("data-visible");
+            // TODO: fix hardcoded size offset
+            var scrollHeight = headerExtended.height() - 86;
+            var scrollTop = $(window).scrollTop();
+
+            if(!headerVisible && scrollTop > scrollHeight) {
+                header.attr("data-visible", "true");
+                header.fadeIn(100);
+//            console.log("show", headerVisible, scrollHeight, window.scrollY);
+            }
+
+            if (headerVisible && scrollTop <= scrollHeight) {
+                header.attr("data-visible", ""); // huzzah for String type
+                header.fadeOut(100);
+//            console.log("hide", headerVisible, scrollHeight, window.scrollY);
+            }
+        })
+    }
+
+    var navItems = $('#header-nav-items');
+    var toggle = function (e) {
+        // TODO: fix bug when toggled off in mobile mode but switching to desktop
+        if (header.hasClass('header-white')) {
+            // toggle on
+            header.removeClass('header-white').addClass('header-blue');
+            navItems.show();
+        } else {
+            header.removeClass('header-blue').addClass('header-white');
+            navItems.hide();
+        }
+        return false;
+    };
+    $('#hamburger').on("click", toggle);
+    $('#close').on("click", toggle);
+
+    var content = $('#content');
+    var w = $(window);
+    var keepHeaderAligned = function (e) {
+        header.css({left: content.offset().left - w.scrollLeft()});
+    };
+    $(window).on("scroll", keepHeaderAligned);
+    $(window).on("resize", keepHeaderAligned);
+</script>
+
+</body>
+</html>
