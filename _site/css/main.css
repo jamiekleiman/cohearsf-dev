@@ -106,7 +106,7 @@ table {
     line-height: 1.667; }
     .blue p {
       text-align: center;
-      margin: 50px 0 0 0; }
+      margin: 70px 0 0 0; }
 
   .off-white {
     background-color: #f9f9f9;
@@ -383,6 +383,8 @@ table {
       #programs .feature-bottom h2 {
         text-align: center;
         padding: 1.3em 0; }
+    #programs .cta {
+      margin-top: 3em; }
 
   html {
     height: 100%;
@@ -421,7 +423,7 @@ table {
     color: #626363;
     column-count: 2;
     column-gap: 40px;
-    margin: 0 5em; }
+    margin: 0 8em; }
     ul.two-column-list li {
       padding: 5px 0;
       break-inside: avoid; }
@@ -459,7 +461,8 @@ table {
       font-size: 15px;
       color: #f9f9f9;
       line-height: 1.6;
-      padding: 50px 0 0 542px; }
+      padding: 50px 0;
+      text-align: center; }
       #footer #address a {
         color: #f9f9f9;
         text-decoration: none; }

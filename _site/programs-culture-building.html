@@ -31,10 +31,10 @@
     
         <div id="header-nav-items" class="mobile-hidden">
             <a id="close" href="#"><img src="./img/mobile/header-x.png" alt="X"></a>
-            <a id="home" href="/">cohear</a>
-            <a href="/process.html">Our Process</a>
+            <a id="home" href="/">home</a>
+            <a href="/process.html">Process</a>
             <a href="/programs.html">Programs</a>
-            <a href="/mission.html">Our Mission</a>
+            <a href="/mission.html">Mission</a>
             <a href="/about.html">About Us</a>
             <a href="/contact.html">Contact</a>
             <a href="/blog.html">Blog</a>
@@ -136,7 +136,7 @@
         $(window).on("scroll", function (e) {
             var headerVisible = header.attr("data-visible");
             // TODO: fix hardcoded size offset
-            var scrollHeight = headerExtended.height() - 86;
+            var scrollHeight = headerExtended.height() - 486;
             var scrollTop = $(window).scrollTop();
 
             if(!headerVisible && scrollTop > scrollHeight) {
