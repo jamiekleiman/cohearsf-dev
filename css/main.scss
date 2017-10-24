@@ -63,12 +63,16 @@
         font-family: "Akkurat Light";
         color: #626363;
         column-count: 2;
-        column-gap: 2em;
+        column-gap: 2.2em;
         margin: 0 5em;
         
         li{
             padding: 5px 0;
             break-inside: avoid;
+        }
+        
+        &.lengthy{
+            margin: 0 9em;
         }
     }
     

@@ -422,11 +422,13 @@ table {
     font-family: "Akkurat Light";
     color: #626363;
     column-count: 2;
-    column-gap: 2em;
+    column-gap: 2.2em;
     margin: 0 5em; }
     ul.two-column-list li {
       padding: 5px 0;
       break-inside: avoid; }
+    ul.two-column-list.lengthy {
+      margin: 0 9em; }
 
   .section-padding {
     padding-top: 3em;
@@ -537,7 +539,7 @@ table {
 
   #header {
     width: 375px;
-    height: 86px;
+    height: 79px;
     background-size: 371px;
     position: fixed;
     top: 0;
@@ -545,7 +547,7 @@ table {
     #header #hamburger {
       display: block;
       width: 375px;
-      height: 86px; }
+      height: 79px; }
     #header #header-logo {
       display: none; }
     #header #header-nav-items {
@@ -849,7 +851,7 @@ table {
       padding-right: 1em; }
     #programs .feature {
       width: auto;
-      margin: 0% 2% 6%; }
+      margin: 0% 2% 12%; }
       #programs .feature a {
         text-decoration: none; }
     #programs .feature-top {
